@@ -9,10 +9,11 @@ export const orderSchema = new Schema({
     total: { type: Number },
 
     orderProducts: {
-        _id  : { type: Schema.Types.ObjectId, ref:'Product', require: true },
-        name : { type: String },
-        price: { type: Number },
-        image: { type: String }, 
+        _id     : { type: Schema.Types.ObjectId, ref:'Product', require: true },
+        name    : { type: String },
+        price   : { type: Number },
+        image   : { type: String },
+        quantity: { type: Number } 
     },
 
     delivered: { tyoe: Boolean, default: false }

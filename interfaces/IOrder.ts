@@ -5,7 +5,7 @@ export interface IOrder {
     name: string
     total: number
     orderProducts: OrderProduct[]
-
+    
     delivered: boolean
     
     createdAt?: string
@@ -18,4 +18,5 @@ export interface OrderProduct {
     name : string
     price: number
     image: string
+    quantity: number
 }
