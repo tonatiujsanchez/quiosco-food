@@ -1,5 +1,6 @@
 import Head from "next/head"
 import { FC, ReactNode } from "react"
+import { Siderbar } from "../shared"
 
 interface Props {
     children: ReactNode
@@ -17,7 +18,7 @@ export const LayoutMain:FC<Props> = ({ children, namePage }) => {
             </Head>
             <div className="md:flex">
                 <aside className="md:w-3/12 xl:w-1/4 2xl:1/5">
-                    <h2>Siderbar here</h2>
+                    <Siderbar />
                 </aside>
                 <main className="md:w-7/12 xl:w-3/4 2xl:4/5 h-screen overflow-y-auto">
                     { children }
